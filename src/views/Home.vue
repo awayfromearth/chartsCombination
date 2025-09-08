@@ -13,6 +13,7 @@ import CircleRunaway from "@/components/CircleRunaway.vue"
 import ScanRadius from "@/components/ScanRadius.vue"
 import CakeLinkage from "@/components/CakeLinkage.vue"
 import Trend from "@/components/Trend.vue"
+import DynamicLine from "@/components/DynamicLine.vue"
 
 const editor = ref(null)
 onMounted(() => {
@@ -48,6 +49,7 @@ onBeforeUnmount(() => {
 
       <CakeLinkage />
       <Trend />
+      <DynamicLine />
     </div>
   </div>
 </template>
