@@ -6,7 +6,7 @@ let now = +new Date(2019, 1, 1), value = Math.random() * 1000, year, month, day
 const gap = 24 * 60 * 60 * 1000
 function getRandomData() {
   now = new Date(+now + gap)
-  value += Math.random() * 25 - 10
+  value += Math.random() * 25 - 12
   year = now.getFullYear()
   month = now.getMonth() + 1
   day = now.getDate()

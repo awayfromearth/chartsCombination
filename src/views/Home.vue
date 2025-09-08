@@ -14,6 +14,7 @@ import ScanRadius from "@/components/ScanRadius.vue"
 import CakeLinkage from "@/components/CakeLinkage.vue"
 import Trend from "@/components/Trend.vue"
 import DynamicLine from "@/components/DynamicLine.vue"
+import StaffMix from "@/components/StaffMix.vue"
 
 const editor = ref(null)
 onMounted(() => {
@@ -50,6 +51,8 @@ onBeforeUnmount(() => {
       <CakeLinkage />
       <Trend />
       <DynamicLine />
+
+      <StaffMix />
     </div>
   </div>
 </template>
