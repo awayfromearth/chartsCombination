@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+optgroup {
+  font-style: normal;
+  font-weight: normal;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+}
