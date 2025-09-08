@@ -12,6 +12,7 @@ import RotateColorful from "@/components/RotateColorful.vue"
 import CircleRunaway from "@/components/CircleRunaway.vue"
 import ScanRadius from "@/components/ScanRadius.vue"
 import CakeLinkage from "@/components/CakeLinkage.vue"
+import Trend from "@/components/Trend.vue"
 
 const editor = ref(null)
 onMounted(() => {
@@ -46,6 +47,7 @@ onBeforeUnmount(() => {
       <ScanRadius />
 
       <CakeLinkage />
+      <Trend />
     </div>
   </div>
 </template>
