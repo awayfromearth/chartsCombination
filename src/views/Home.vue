@@ -16,6 +16,7 @@ import Trend from "@/components/Trend.vue"
 import DynamicLine from "@/components/DynamicLine.vue"
 import StaffMix from "@/components/StaffMix.vue"
 import FlashCloud from "@/components/FlashCloud.vue"
+import RingPie from "@/components/RingPie.vue"
 
 const editor = ref(null)
 onMounted(() => {
@@ -55,6 +56,7 @@ onBeforeUnmount(() => {
 
       <StaffMix />
       <FlashCloud />
+      <RingPie />
     </div>
   </div>
 </template>
