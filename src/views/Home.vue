@@ -18,6 +18,8 @@ import StaffMix from "@/components/StaffMix.vue"
 import FlashCloud from "@/components/FlashCloud.vue"
 import RingPie from "@/components/RingPie.vue"
 import ColorfulRadar from "@/components/ColorfulRadar.vue"
+import DynamicList from "@/components/DynamicList.vue"
+import Bar3D from "@/components/Bar3D.vue"
 
 const editor = ref(null)
 onMounted(() => {
@@ -59,6 +61,9 @@ onBeforeUnmount(() => {
       <FlashCloud />
       <RingPie />
       <ColorfulRadar />
+
+      <DynamicList />
+      <Bar3D />
     </div>
   </div>
 </template>

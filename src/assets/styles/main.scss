@@ -1,3 +1,58 @@
 @use "base";
 @use "common";
 @use "@/assets/iconfont/iconfont.css";
+
+@font-face {
+  font-family: "DIGITALDREAMFAT";
+  src: url(./fonts/DIGITALDREAMFAT.woff2) format("woff2"),
+       url(./fonts/DIGITALDREAMFAT.woff) format("woff"),
+       url(./fonts/DIGITALDREAMFAT.ttf) format("truetype");
+}
+
+.odometer {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  background-image: radial-gradient(rgba(139, 245, 165, 0.4), #000000);
+  background-color: #000;
+  font-family: "DIGITALDREAMFAT", serif;
+  padding: 0 .2em;
+  line-height: 1.1em;
+  color: #8bf5a5;
+
+  .odometer-digit {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+
+    .odometer-digit-spacer {
+      display: inline-block;
+      vertical-align: middle;
+      visibility: hidden;
+    }
+
+    .odometer-digit-inner {
+      text-align: left;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      .odometer-ribbon {
+        display: block;
+
+        .odometer-ribbon-inner {
+          display: block;
+          backface-visibility: hidden;
+
+          .odometer-value {
+            display: block;
+            transform: translateZ(0);
+          }
+        }
+      }
+    }
+  }
+}

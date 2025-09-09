@@ -13,19 +13,17 @@ function renderChart() {
     radar: [
       {
         indicator: [
-          { text: "外观", max: 100 },
-          { text: "拍照", max: 100 },
-          { text: "系统", max: 100 },
-          { text: "性能", max: 100 },
-          { text: "屏幕", max: 100 },
-          { text: "折叠", max: 100 }
+          { name: "外观", max: 100 },
+          { name: "拍照", max: 100 },
+          { name: "系统", max: 100 },
+          { name: "性能", max: 100 },
+          { name: "屏幕", max: 100 },
+          { name: "折叠", max: 100 }
         ],
         radius: "75%",
         center: ["50%", "50%"],
-        name: {
-          textStyle: {
-            color: "#1883ff"
-          }
+        axisName: {
+          color: "#1883ff"
         },
         axisTick: {
           show: false
