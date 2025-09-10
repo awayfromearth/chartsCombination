@@ -22,6 +22,9 @@ import DynamicList from "@/components/home/DynamicList.vue"
 import Bar3D from "@/components/home/Bar3D.vue"
 import ColorfulArea from "@/components/home/ColorfulArea.vue"
 import Rainbow from "@/components/home/Rainbow.vue"
+import Gauge from "@/components/home/Gauge.vue"
+import WaterPolo from "@/components/home/WaterPolo.vue"
+import CircleNesting from "@/components/home/CircleNesting.vue"
 
 const editor = ref(null)
 onMounted(() => {
@@ -69,6 +72,11 @@ onBeforeUnmount(() => {
       <ColorfulArea />
 
       <Rainbow />
+      <Gauge />
+      <WaterPolo />
+      <CircleNesting />
+
+      <div class="divider"></div>
     </div>
   </div>
 </template>
@@ -80,6 +88,7 @@ onBeforeUnmount(() => {
   top: 0;
   width: 100%;
   height: 100%;
+
   .wrap {
     transform-origin: 0 0 0;
     background: rgb(0, 0, 0) url(@/assets/images/background/bj.jpg) 50% 0 / contain no-repeat;
@@ -88,6 +97,7 @@ onBeforeUnmount(() => {
     min-height: auto;
     height: 1080px;
     overflow: auto;
+
     .top {
       position: absolute;
       left: 0;
@@ -96,6 +106,16 @@ onBeforeUnmount(() => {
       height: 80px;
       background: transparent url(@/assets/images/background/top_nav.png) 65% 0 no-repeat;
       overflow: hidden;
+    }
+
+    .divider {
+      position: absolute;
+      left: 50px;
+      top: 3253px;
+      width: 90%;
+      height: 50px;
+      border: none;
+      background: transparent;
     }
   }
 }
