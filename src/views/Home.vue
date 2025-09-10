@@ -2,24 +2,26 @@
 import { onMounted, ref, onBeforeUnmount } from "vue"
 import { setScreenSize } from "@/utils/size"
 
-import RankingList from "@/components/RankingList.vue"
-import SeamlessScroll from "@/components/SeamlessScroll.vue"
-import Pyramid from "@/components/Pyramid.vue"
-import ScrollArc from "@/components/ScrollArc.vue"
-import DoubleBar from "@/components/DoubleBar.vue"
-import RingPin from "@/components/RingPin.vue"
-import RotateColorful from "@/components/RotateColorful.vue"
-import CircleRunaway from "@/components/CircleRunaway.vue"
-import ScanRadius from "@/components/ScanRadius.vue"
-import CakeLinkage from "@/components/CakeLinkage.vue"
-import Trend from "@/components/Trend.vue"
-import DynamicLine from "@/components/DynamicLine.vue"
-import StaffMix from "@/components/StaffMix.vue"
-import FlashCloud from "@/components/FlashCloud.vue"
-import RingPie from "@/components/RingPie.vue"
-import ColorfulRadar from "@/components/ColorfulRadar.vue"
-import DynamicList from "@/components/DynamicList.vue"
-import Bar3D from "@/components/Bar3D.vue"
+import RankingList from "@/components/home/RankingList.vue"
+import SeamlessScroll from "@/components/home/SeamlessScroll.vue"
+import Pyramid from "@/components/home/Pyramid.vue"
+import ScrollArc from "@/components/home/ScrollArc.vue"
+import DoubleBar from "@/components/home/DoubleBar.vue"
+import RingPin from "@/components/home/RingPin.vue"
+import RotateColorful from "@/components/home/RotateColorful.vue"
+import CircleRunaway from "@/components/home/CircleRunaway.vue"
+import ScanRadius from "@/components/home/ScanRadius.vue"
+import CakeLinkage from "@/components/home/CakeLinkage.vue"
+import Trend from "@/components/home/Trend.vue"
+import DynamicLine from "@/components/home/DynamicLine.vue"
+import StaffMix from "@/components/home/StaffMix.vue"
+import FlashCloud from "@/components/home/FlashCloud.vue"
+import RingPie from "@/components/home/RingPie.vue"
+import ColorfulRadar from "@/components/home/ColorfulRadar.vue"
+import DynamicList from "@/components/home/DynamicList.vue"
+import Bar3D from "@/components/home/Bar3D.vue"
+import ColorfulArea from "@/components/home/ColorfulArea.vue"
+import Rainbow from "@/components/home/Rainbow.vue"
 
 const editor = ref(null)
 onMounted(() => {
@@ -64,6 +66,9 @@ onBeforeUnmount(() => {
 
       <DynamicList />
       <Bar3D />
+      <ColorfulArea />
+
+      <Rainbow />
     </div>
   </div>
 </template>
