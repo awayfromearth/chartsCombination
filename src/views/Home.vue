@@ -113,7 +113,7 @@ onBeforeUnmount(() => {
       left: 50px;
       top: 3253px;
       width: 90%;
-      height: 50px;
+      height: 30px;
       border: none;
       background: transparent;
     }
