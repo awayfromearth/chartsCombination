@@ -14,6 +14,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
-  background-color: skyblue;
 }
 </style>
